@@ -17,8 +17,10 @@
 
 <body>
 
-  <header class="header">
-    <a href="#" class="logo">bo<span>-</span>bo</a>
+  <header class="header" id="top">
+    <a href="#" class="logo" aria-label="bo-bo — на главную">
+      <img src="assets/images/bobo-logo.png" alt="">
+    </a>
 
     <nav>
       <a href="#about">О нас</a>
@@ -26,24 +28,24 @@
       <a href="#contacts">Контакты</a>
     </nav>
 
-    <a class="header-link" href="#contacts">НАЙТИ НАС</a>
+    <a class="header-link" href="tel:+79647650044">ПОЗВОНИТЬ</a>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-content">
-        <div class="eyebrow">bo-bo · PODOLSK</div>
+        <div class="eyebrow reveal">bo-bo · PODOLSK</div>
 
-        <h1>
+        <h1 class="reveal reveal-delay-1">
           Время<br>
           быть <span>здесь.</span>
         </h1>
 
-        <p class="hero-description">
-          Здесь особенная атмосфера, продуманный интерьер и внимание к деталям.
+        <p class="hero-description reveal reveal-delay-2">
+          Здесь особая аура, продуманный интерьер и внимание к деталям.
         </p>
 
-        <a href="#about" class="main-button">
+        <a href="#about" class="main-button reveal reveal-delay-3">
           Открыть пространство
         </a>
       </div>
@@ -51,12 +53,12 @@
 
     <section class="section about" id="about">
       <div>
-        <div class="section-label">О ЗАВЕДЕНИИ</div>
-        <h2 class="section-title">
-          Атмосфера<br>в каждой детали
+        <div class="section-label reveal">О ЗАВЕДЕНИИ</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Настроение<br>в каждой детали
         </h2>
 
-        <p class="about-text">
+        <p class="about-text reveal reveal-delay-2">
           bo-bo это место, в котором
           сочетаются выразительный интерьер,
           тёплое освещение и уютные зоны отдыха.
@@ -66,50 +68,67 @@
       </div>
 
       <img
-        class="about-image"
+        class="about-image reveal reveal-delay-3"
         src="https://img02.restaurantguru.ru/c6a6-Restaurant-Bo-bo-Lounge-picture.jpg"
         alt="Интерьер bo-bo"
       >
     </section>
 
     <section class="section gallery" id="gallery">
-      <div class="section-label">ВИЗУАЛЬНАЯ ИСТОРИЯ</div>
-      <h2 class="section-title">Интерьер bo-bo</h2>
+      <div class="section-label reveal">ВИЗУАЛЬНАЯ ИСТОРИЯ</div>
+      <h2 class="section-title reveal reveal-delay-1">Интерьер bo-bo</h2>
 
       <div class="gallery-grid">
-        <img src="https://img02.restaurantguru.ru/cf8b-Restaurant-Bo-bo-Lounge-view.jpg" alt="Барная зона">
-        <img src="https://img02.restaurantguru.ru/cc86-Restaurant-Bo-bo-Lounge-image.jpg" alt="Зона отдыха">
-        <img src="https://img02.restaurantguru.ru/c2f5-Restaurant-Bo-bo-Lounge-photo.jpg" alt="Декоративная зона">
-        <img src="https://img02.restaurantguru.ru/c1df-Bo-bo-Lounge-Podolsk-picture.jpg" alt="Верхний уровень">
-        <img src="https://img02.restaurantguru.ru/c56f-Bo-bo-Lounge-Podolsk-photo.jpg" alt="Декор">
-        <img src="https://avatars.mds.yandex.net/get-altay/2397657/2a00000175331b1c054a54e3a31c54aadb4b/XXL_height" alt="Главный зал">
+        <img class="reveal reveal-delay-1" src="https://img02.restaurantguru.ru/cf8b-Restaurant-Bo-bo-Lounge-view.jpg" alt="Барная зона">
+        <img class="reveal reveal-delay-2" src="https://img02.restaurantguru.ru/cc86-Restaurant-Bo-bo-Lounge-image.jpg" alt="Зона отдыха">
+        <img class="reveal reveal-delay-3" src="https://img02.restaurantguru.ru/c2f5-Restaurant-Bo-bo-Lounge-photo.jpg" alt="Декоративная зона">
+        <img class="reveal reveal-delay-1" src="https://img02.restaurantguru.ru/c1df-Bo-bo-Lounge-Podolsk-picture.jpg" alt="Верхний уровень">
+        <img class="reveal reveal-delay-2" src="https://img02.restaurantguru.ru/c56f-Bo-bo-Lounge-Podolsk-photo.jpg" alt="Декор">
       </div>
     </section>
 
-    <section class="section contact" id="contacts">
-      <div class="section-label">МЫ НАХОДИМСЯ</div>
-      <h2 class="section-title">bo-bo · Подольск</h2>
+    <section class="contact" id="contacts" aria-labelledby="contact-title">
+      <div class="section contact-heading">
+        <div class="section-label reveal">КОНТАКТЫ</div>
+        <h2 class="section-title reveal reveal-delay-1" id="contact-title">Будем рады видеть вас</h2>
+      </div>
 
-      <p class="contact-info">
-        Московская область, Подольск,<br>
-        улица Клемента Готвальда, 6А
-      </p>
+      <div class="contact-grid">
+        <article class="contact-card reveal reveal-delay-1">
+          <h3>Часы работы</h3>
+          <p>Вс–чт: 13:00–01:00<br>Пт–сб: 13:00–04:00</p>
+        </article>
 
-      <a
-        class="main-button"
-        href="https://yandex.ru/maps/org/bo_bo_lounge/233498281186/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Посмотреть на карте
-      </a>
+        <article class="contact-card reveal reveal-delay-2">
+          <h3>Забронируйте столик</h3>
+          <div class="contact-links">
+            <a class="contact-link" href="tel:+79647650044">8 (964) 765-00-44</a>
+            <a class="contact-link" href="mailto:info@bobopodolsk.ru">info@bobopodolsk.ru</a>
+          </div>
+        </article>
+
+        <article class="contact-card reveal reveal-delay-3">
+          <h3>Адрес</h3>
+          <address>г. Подольск,<br>ул. Клемента Готвальда, 6А</address>
+          <a
+            class="contact-action"
+            href="https://yandex.ru/maps/org/bo_bo_lounge/233498281186/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Построить маршрут <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div class="logo">bo<span>-</span>bo</div>
-    <div>© bo-bo · PODOLSK</div>
-    <div>Официальный сайт</div>
+    <a class="logo reveal reveal-delay-1" href="#" aria-label="bo-bo — на главную">
+      <img src="assets/images/bobo-logo.png" alt="">
+    </a>
+    <div class="reveal reveal-delay-2">© bo-bo · PODOLSK</div>
+    <a class="footer-contact reveal reveal-delay-3" href="#top" aria-label="Вернуться к началу страницы">Наверх ↑</a>
   </footer>
 
 </body>
