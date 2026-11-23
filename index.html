@@ -45,8 +45,8 @@
           Здесь особая аура, продуманный интерьер и внимание к деталям.
         </p>
 
-        <a href="#about" class="main-button reveal reveal-delay-3">
-          Открыть пространство
+        <a href="#booking" class="main-button">
+          Забронировать столик
         </a>
       </div>
     </section>
@@ -87,6 +87,36 @@
       </div>
     </section>
 
+    <section class="section booking" id="booking" aria-labelledby="booking-title">
+      <div class="booking-panel">
+        <h2 class="section-title" id="booking-title">Забронировать столик</h2>
+        <p class="booking-note" id="booking-note">Тестовая форма. Используй вымышленные данные.</p>
+
+        <form id="booking-form" method="post" aria-describedby="booking-note">
+          <fieldset class="booking-fields" disabled>
+            <div class="booking-grid">
+              <label>Дата
+                <input type="date" name="date" required>
+              </label>
+              <label>Время
+                <input type="time" name="time" required>
+              </label>
+              <label>Количество гостей
+                <input type="number" name="guests" min="1" step="1" required>
+              </label>
+              <label>Телефон
+                <input type="tel" name="phone" inputmode="tel" autocomplete="off"
+                  placeholder="+7 (___) ___-__-__" maxlength="26" required>
+              </label>
+            </div>
+            <button class="main-button" type="submit">Проверить форму</button>
+          </fieldset>
+          <p class="booking-status" role="status"></p>
+        </form>
+        <noscript>Для проверки формы включите JavaScript.</noscript>
+      </div>
+    </section>
+
     <section class="contact" id="contacts" aria-labelledby="contact-title">
       <div class="section contact-heading">
         <div class="section-label reveal">КОНТАКТЫ</div>
@@ -102,6 +132,7 @@
         <article class="contact-card reveal reveal-delay-2">
           <h3>Забронируйте столик</h3>
           <div class="contact-links">
+            <a class="contact-action" href="#booking">Оставить заявку</a>
             <a class="contact-link" href="tel:+79647650044">8 (964) 765-00-44</a>
             <a class="contact-link" href="mailto:info@bobopodolsk.ru">info@bobopodolsk.ru</a>
           </div>

@@ -525,3 +525,70 @@
         transition-delay: 0ms !important;
       }
     }
+
+.booking-panel {
+  max-width: 720px;
+  margin-inline: auto;
+  padding: clamp(20px, 5vw, 48px);
+  background: var(--surface);
+  border: 1px solid #ffffff18;
+}
+
+.booking-note,
+.booking-status {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.booking-fields {
+  min-inline-size: 0;
+  margin-top: 24px;
+  border: 0;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.booking-grid label {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.booking-grid input {
+  width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  padding: 10px 12px;
+  color: var(--cream);
+  background: var(--bg);
+  color-scheme: dark;
+  border: 1px solid var(--muted);
+  border-radius: 4px;
+  font: inherit;
+}
+
+.booking-fields .main-button {
+  margin-top: 24px;
+  max-width: 100%;
+  border: 0;
+  cursor: pointer;
+}
+
+.booking-fields :focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.booking-status:not(:empty) {
+  margin-top: 16px;
+}
+
+@media (max-width: 540px) {
+  .booking-grid {
+    grid-template-columns: 1fr;
+  }
+}
