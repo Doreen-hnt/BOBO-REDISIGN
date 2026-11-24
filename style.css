@@ -630,3 +630,103 @@
     grid-template-columns: 1fr;
   }
 }
+
+.offering-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.offering-link-label,
+.offering-gallery-back {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.offering-link-label {
+  display: block;
+  margin-top: 14px;
+}
+
+.offering-gallery .section-title:focus {
+  outline-offset: 4px;
+}
+
+.offering-gallery-grid {
+  margin-bottom: 24px;
+}
+
+.offering-gallery-grid .offering-photo {
+  border: 1px solid #ffffff18;
+}
+
+
+.bar-menu-group {
+  margin-bottom: 12px;
+  background: var(--surface);
+  border: 1px solid #ffffff18;
+}
+.bar-menu-group summary {
+  padding: 14px 16px;
+  cursor: pointer;
+  color: var(--cream);
+}
+.bar-menu-group summary:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+.bar-menu-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0 12px 12px;
+}
+.bar-menu-items.is-masonry {
+  display: block;
+  position: relative;
+}
+.bar-menu-items.is-masonry > .bar-menu-item {
+  position: absolute;
+}
+.bar-menu-item {
+  min-width: 0;
+  padding: 16px;
+  background: var(--bg);
+  overflow-wrap: anywhere;
+}
+.bar-menu-item h4 { font-size: 1.125rem; margin-bottom: 6px; }
+.bar-menu-item p { line-height: 1.5; margin-bottom: 6px; }
+.bar-menu-meta { color: var(--gold); }
+.bar-menu-photos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.bar-menu-photos figure {
+  margin: 0;
+}
+.bar-menu-photos img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.bar-menu-photos:has(> figure:only-child) {
+  grid-template-columns: 1fr;
+}
+.bar-menu-photos:has(> figure:nth-child(2):last-child),
+.bar-menu-photos:has(> figure:nth-child(4)) {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (max-width: 680px) {
+  .bar-menu-items { grid-template-columns: 1fr; }
+  .bar-menu-items.is-masonry {
+    display: grid;
+    height: auto !important;
+  }
+  .bar-menu-items.is-masonry > .bar-menu-item {
+    position: static;
+    width: auto !important;
+  }
+}
