@@ -226,6 +226,41 @@
       filter: brightness(1.06);
     }
 
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(14px, 2vw, 24px);
+    }
+
+    .offering-card {
+      background: var(--surface);
+      border: 1px solid #ffffff18;
+    }
+
+    .offering-photo {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: linear-gradient(145deg, #382e25, #26211d);
+    }
+
+    .offering-content {
+      padding: clamp(18px, 3vw, 28px);
+    }
+
+    .offering-content h3 {
+      margin-bottom: 8px;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(24px, 3vw, 32px);
+      font-weight: 500;
+    }
+
+    .offering-content p {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
     .gallery {
       background: var(--surface);
     }
@@ -436,6 +471,10 @@
 
       .about-image {
         height: 350px;
+      }
+
+      .offerings-grid {
+        grid-template-columns: 1fr;
       }
 
       .gallery-grid {
