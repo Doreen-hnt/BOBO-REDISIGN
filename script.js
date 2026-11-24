@@ -151,6 +151,124 @@ document.addEventListener('DOMContentLoaded', () => {
         layoutAllMenus();
     }
 
+    const compactMenuItems = [...document.querySelectorAll('.menu-items--masonry')];
+    if (compactMenuItems.length) {
+        const desktopLayout = window.matchMedia('(min-width: 681px)');
+        let layoutScheduled = false;
+
+        const layoutCards = container => {
+            const items = [...container.children];
+            if (!desktopLayout.matches) {
+                container.classList.remove('is-masonry');
+                container.style.removeProperty('height');
+                items.forEach(item => {
+                    item.style.removeProperty('position');
+                    item.style.removeProperty('width');
+                    item.style.removeProperty('left');
+                    item.style.removeProperty('top');
+                });
+                return;
+            }
+
+            container.classList.add('is-masonry');
+            container.style.height = 'auto';
+            const styles = getComputedStyle(container);
+            const padding = parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight);
+            const gap = parseFloat(styles.columnGap) || 8;
+            const contentWidth = container.clientWidth - padding;
+            if (contentWidth <= 0) return;
+
+            if (items.length === 1) {
+                items[0].style.width = `${contentWidth}px`;
+                items[0].style.left = '0px';
+                items[0].style.top = '0px';
+                container.style.height = `${items[0].getBoundingClientRect().height}px`;
+                return;
+            }
+
+            const columnWidth = (contentWidth - gap) / 2;
+            const columnHeights = [0, 0];
+            const itemWeights = [];
+            const initialColumns = [];
+            items.forEach(item => {
+                item.style.width = `${columnWidth}px`;
+                const column = columnHeights[0] <= columnHeights[1] ? 0 : 1;
+                initialColumns.push(column);
+                const weight = Math.round(item.getBoundingClientRect().height) + gap;
+                itemWeights.push(weight);
+                columnHeights[column] += weight;
+            });
+
+            let assignments = new Map([[0, { changes: 0, left: [] }]]);
+            itemWeights.forEach((weight, index) => {
+                const nextAssignments = new Map();
+                assignments.forEach((assignment, leftHeight) => {
+                    [0, 1].forEach(column => {
+                        const nextHeight = leftHeight + (column === 0 ? weight : 0);
+                        const changes = assignment.changes + (column === initialColumns[index] ? 0 : 1);
+                        const current = nextAssignments.get(nextHeight);
+                        if (!current || changes < current.changes) {
+                            nextAssignments.set(nextHeight, {
+                                changes,
+                                left: column === 0 ? [...assignment.left, index] : assignment.left,
+                            });
+                        }
+                    });
+                });
+                assignments = nextAssignments;
+            });
+
+            const totalHeight = itemWeights.reduce((total, weight) => total + weight, 0);
+            let bestAssignment;
+            assignments.forEach((assignment, leftHeight) => {
+                const difference = Math.abs(totalHeight - 2 * leftHeight);
+                if (!bestAssignment ||
+                    difference < bestAssignment.difference ||
+                    (difference === bestAssignment.difference && assignment.changes < bestAssignment.assignment.changes)) {
+                    bestAssignment = { assignment, difference };
+                }
+            });
+
+            const leftItems = new Set(bestAssignment.assignment.left);
+            const columnTops = [0, 0];
+            items.forEach((item, index) => {
+                const column = leftItems.has(index) ? 0 : 1;
+                item.style.left = `${column * (columnWidth + gap)}px`;
+                item.style.top = `${columnTops[column]}px`;
+                columnTops[column] += item.getBoundingClientRect().height + gap;
+            });
+            container.style.height = `${Math.max(...columnTops) - gap}px`;
+        };
+
+        const layoutAllCards = () => {
+            layoutScheduled = false;
+            compactMenuItems.forEach(layoutCards);
+        };
+
+        const scheduleLayout = () => {
+            if (layoutScheduled) return;
+            layoutScheduled = true;
+            requestAnimationFrame(layoutAllCards);
+        };
+
+        const observedDetails = new Set();
+        compactMenuItems.forEach(container => {
+            for (let details = container.closest('details'); details; details = details.parentElement.closest('details')) {
+                if (observedDetails.has(details)) continue;
+                details.addEventListener('toggle', scheduleLayout);
+                observedDetails.add(details);
+            }
+        });
+        window.addEventListener('resize', scheduleLayout);
+        if ('ResizeObserver' in window) {
+            const menuObserver = new ResizeObserver(scheduleLayout);
+            compactMenuItems.forEach(container => {
+                container.querySelectorAll('.menu-card').forEach(item => menuObserver.observe(item));
+            });
+        }
+        layoutAllCards();
+    }
+
     const revealElements = document.querySelectorAll('.reveal');
     const prefersReducedMotion = window.matchMedia &&
         window.matchMedia('(prefers-reduced-motion: reduce)').matches;
