@@ -19,11 +19,12 @@
 
   <header class="header" id="top">
     <a href="#" class="logo" aria-label="bo-bo — на главную">
-      <img src="assets/images/bobo-logo.png" alt="">
+      <img src="assets/images/bobo-logo.png" alt="" width="131" height="62">
     </a>
 
-    <nav>
+    <nav aria-label="Основная навигация">
       <a href="#about">О нас</a>
+      <a href="#offerings">Меню</a>
       <a href="#gallery">Интерьер</a>
       <a href="#contacts">Контакты</a>
     </nav>
@@ -33,6 +34,9 @@
 
   <main>
     <section class="hero">
+      <img class="hero-image" src="assets/images/hero/bo-bo-1024.webp"
+        srcset="assets/images/hero/bo-bo-640.webp 640w, assets/images/hero/bo-bo-1024.webp 1024w"
+        sizes="100vw" alt="" fetchpriority="high">
       <div class="hero-content">
         <div class="eyebrow">bo-bo · PODOLSK</div>
 
@@ -72,7 +76,7 @@
         src="assets/images/interior/img-4867.webp"
         alt="Кресла у окна в bo-bo"
         width="1280" height="853" loading="lazy" decoding="async"
-      >
+       srcset="assets/images/interior/img-4867-640.webp 640w, assets/images/interior/img-4867.webp 1280w" sizes="(max-width: 768px) 88vw, 40vw">
     </section>
 
     <section class="section offerings" id="offerings" aria-labelledby="offerings-title">
@@ -81,7 +85,7 @@
         <article class="offering-card reveal reveal-delay-1">
           <a class="offering-link" href="#kitchen-photos" aria-label="Кухня — смотреть меню">
             <div class="offering-image">
-              <img src="assets/images/kitchen/shrimp-tempura.webp" alt="" width="1280" height="954" loading="lazy" decoding="async" class="offering-photo">
+              <img src="assets/images/kitchen/shrimp-tempura.webp" alt="" width="1280" height="954" loading="lazy" decoding="async" class="offering-photo" srcset="assets/images/kitchen/shrimp-tempura-480.webp 480w, assets/images/kitchen/shrimp-tempura.webp 1280w" sizes="(max-width: 450px) 36vw, 28vw">
             </div>
             <div class="offering-content">
               <h3>Кухня</h3>
@@ -92,7 +96,7 @@
         <article class="offering-card reveal reveal-delay-2">
           <a class="offering-link" href="#bar-photos" aria-label="Бар — смотреть меню">
             <div class="offering-image">
-              <img class="offering-photo" src="assets/images/bar/img_6723.webp" alt="" loading="lazy" decoding="async">
+              <img class="offering-photo" src="assets/images/bar/img_6723.webp" alt="" loading="lazy" decoding="async" width="1024" height="768" srcset="assets/images/bar/img_6723-480.webp 480w, assets/images/bar/img_6723.webp 1024w" sizes="(max-width: 450px) 36vw, 28vw">
             </div>
             <div class="offering-content">
               <h3>Бар</h3>
@@ -103,7 +107,7 @@
         <article class="offering-card reveal reveal-delay-3">
           <a class="offering-link" href="#hookah-photos" aria-label="Кальяны — смотреть меню">
             <div class="offering-image">
-              <img src="assets/images/hookah/popcorn-time-2.webp" alt="" width="1280" height="1103" loading="lazy" decoding="async" class="offering-photo">
+              <img src="assets/images/hookah/popcorn-time-2.webp" alt="" width="1280" height="1103" loading="lazy" decoding="async" class="offering-photo" srcset="assets/images/hookah/popcorn-time-2-480.webp 480w, assets/images/hookah/popcorn-time-2.webp 1280w" sizes="(max-width: 450px) 36vw, 28vw">
             </div>
             <div class="offering-content">
               <h3>Кальяны</h3>
@@ -119,17 +123,17 @@
 
       <div class="gallery-grid">
         <img class="reveal reveal-delay-1" src="assets/images/interior/img-4868.webp"
-          alt="Общий вид зала" width="1280" height="853" loading="lazy" decoding="async">
+          alt="Общий вид зала" width="1280" height="853" loading="lazy" decoding="async" srcset="assets/images/interior/img-4868-640.webp 640w, assets/images/interior/img-4868.webp 1280w" sizes="(max-width: 450px) 44vw, 28vw">
         <img class="reveal reveal-delay-2" src="assets/images/interior/img-4866.webp"
-          alt="Барная стойка и вывеска bo-bo" width="1280" height="853" loading="lazy" decoding="async">
+          alt="Барная стойка и вывеска bo-bo" width="1280" height="853" loading="lazy" decoding="async" srcset="assets/images/interior/img-4866-640.webp 640w, assets/images/interior/img-4866.webp 1280w" sizes="(max-width: 450px) 44vw, 28vw">
         <img class="reveal reveal-delay-3" src="assets/images/interior/img-4870.webp"
-          alt="Столик с угловым диваном" width="1280" height="853" loading="lazy" decoding="async">
+          alt="Столик с угловым диваном" width="1280" height="853" loading="lazy" decoding="async" srcset="assets/images/interior/img-4870-640.webp 640w, assets/images/interior/img-4870.webp 1280w" sizes="(max-width: 450px) 44vw, 28vw">
         <img class="reveal reveal-delay-1" src="assets/images/interior/img-4869.webp"
-          alt="Диваны и столики в основном зале" width="1280" height="853" loading="lazy" decoding="async">
+          alt="Диваны и столики в основном зале" width="1280" height="853" loading="lazy" decoding="async" srcset="assets/images/interior/img-4869-640.webp 640w, assets/images/interior/img-4869.webp 1280w" sizes="(max-width: 450px) 44vw, 28vw">
         <img class="reveal reveal-delay-2" src="assets/images/interior/img-4867.webp"
-          alt="Кресла у окна" width="1280" height="853" loading="lazy" decoding="async">
+          alt="Кресла у окна" width="1280" height="853" loading="lazy" decoding="async" srcset="assets/images/interior/img-4867-640.webp 640w, assets/images/interior/img-4867.webp 1280w" sizes="(max-width: 450px) 44vw, 28vw">
         <img class="reveal reveal-delay-3" src="assets/images/interior/img-4871.webp"
-          alt="Угловой диван за деревянной перегородкой" width="1280" height="853" loading="lazy" decoding="async">
+          alt="Угловой диван за деревянной перегородкой" width="1280" height="853" loading="lazy" decoding="async" srcset="assets/images/interior/img-4871-640.webp 640w, assets/images/interior/img-4871.webp 1280w" sizes="(max-width: 450px) 44vw, 28vw">
       </div>
     </section>
 
@@ -143,63 +147,63 @@
   <summary>Закуски</summary>
 <div class="menu-items">
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/shrimp-tempura.webp" alt="Креветки темпура" width="1280" height="954" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/shrimp-tempura.webp" alt="Креветки темпура" width="1280" height="954" loading="lazy" decoding="async" srcset="assets/images/kitchen/shrimp-tempura-320.webp 320w, assets/images/kitchen/shrimp-tempura.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Креветки темпура</h4>
       <p class="bar-menu-meta">180/50 г · 900 ₽</p>
       <p>тигровые креветки в воздушном кляре с соусом бэнг - бэнг</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/cheese-sticks.webp" alt="Сырные палочки" width="1280" height="954" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/cheese-sticks.webp" alt="Сырные палочки" width="1280" height="954" loading="lazy" decoding="async" srcset="assets/images/kitchen/cheese-sticks-320.webp 320w, assets/images/kitchen/cheese-sticks.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Сырные палочки</h4>
       <p class="bar-menu-meta">180/50 г · 690 ₽</p>
       <p>обжаренный сыр моцарелла подается с малиновым конфи и медом</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-047-1.webp" alt="Крылья BBQ" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-047-1.webp" alt="Крылья BBQ" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-047-1-320.webp 320w, assets/images/kitchen/dish-047-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Крылья BBQ</h4>
       <p class="bar-menu-meta">400 г · 550 ₽</p>
       <p>куриные крылья в соусе барбекю, сельдерей, морковь, соус блю - чиз</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-049-1.webp" alt="Пивной сет" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-049-1.webp" alt="Пивной сет" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-049-1-320.webp 320w, assets/images/kitchen/dish-049-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Пивной сет</h4>
       <p class="bar-menu-meta">600 г · 750 ₽</p>
       <p>сырные палочки, гренки чесночные, крылья BBQ</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-052-1.webp" alt="Антипасти" width="1280" height="967" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-052-1.webp" alt="Антипасти" width="1280" height="967" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-052-1-320.webp 320w, assets/images/kitchen/dish-052-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Антипасти</h4>
       <p class="bar-menu-meta">240/75 г · 1 760 ₽</p>
       <p>Хамон, тамбовский окорок, фуэт, дорблю, камамбер, пармезан, маслины каламата, сицилийские оливки, варенье из кизила и айвы.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/fruit-plate.webp" alt="Фруктовая тарелка" width="1280" height="958" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/fruit-plate.webp" alt="Фруктовая тарелка" width="1280" height="958" loading="lazy" decoding="async" srcset="assets/images/kitchen/fruit-plate-320.webp 320w, assets/images/kitchen/fruit-plate.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Фруктовая тарелка</h4>
       <p class="bar-menu-meta">900 г · 900 ₽</p>
       <p>Сезонные ягоды и фрукты.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-065-1.webp" alt="Гренки" width="1280" height="953" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-065-1.webp" alt="Гренки" width="1280" height="953" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-065-1-320.webp 320w, assets/images/kitchen/dish-065-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Гренки</h4>
       <p class="bar-menu-meta">130/35 г · 470 ₽</p>
       <p>хрустящие бородинские гренки в сочетании с креветочным соусом и чесночным маслом</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-071-1.webp" alt="Камамбер" width="1280" height="958" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-071-1.webp" alt="Камамбер" width="1280" height="958" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-071-1-320.webp 320w, assets/images/kitchen/dish-071-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Камамбер запечённый</h4>
       <p class="bar-menu-meta">250 г · 950 ₽</p>
       <p>Запечённый камамбер с багетом и брусничным конфитюром.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/sicilian-olives.webp" alt="Оливки сицилийские" width="1280" height="948" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/sicilian-olives.webp" alt="Оливки сицилийские" width="1280" height="948" loading="lazy" decoding="async" srcset="assets/images/kitchen/sicilian-olives-320.webp 320w, assets/images/kitchen/sicilian-olives.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Оливки сицилийские</h4>
       <p class="bar-menu-meta">100 г · 820 ₽</p>
     </div>
@@ -210,49 +214,49 @@
   <summary>Салаты</summary>
 <div class="menu-items">
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-084-1.webp" alt="Овощной салат" width="1280" height="951" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-084-1.webp" alt="Овощной салат" width="1280" height="951" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-084-1-320.webp 320w, assets/images/kitchen/dish-084-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Овощной салат</h4>
       <p class="bar-menu-meta">295 г · 750 ₽</p>
       <p>томаты, огурцы, лук, кинза и ореховая заправка</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-091-1.webp" alt="Салат с тунцом" width="1280" height="961" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-091-1.webp" alt="Салат с тунцом" width="1280" height="961" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-091-1-320.webp 320w, assets/images/kitchen/dish-091-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Салат с тунцом</h4>
       <p class="bar-menu-meta">170 г · 940 ₽</p>
       <p>листья салата с тайским манго, перепелиными яйцами, томатами черри и цитрусовой заправкой</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-096-1.webp" alt="Теплый салат с говядиной" width="1280" height="956" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-096-1.webp" alt="Теплый салат с говядиной" width="1280" height="956" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-096-1-320.webp 320w, assets/images/kitchen/dish-096-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Тёплый салат с говядиной</h4>
       <p class="bar-menu-meta">190 г · 880 ₽</p>
       <p>Листья салата, говядина су-вид, вяленые томаты.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-101-1.webp" alt="Греческий салат" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-101-1.webp" alt="Греческий салат" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-101-1-320.webp 320w, assets/images/kitchen/dish-101-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Греческий салат</h4>
       <p class="bar-menu-meta">350 г · 850 ₽</p>
       <p>томаты розовые, огурцы, болгарский перец, салат романо, мусс из сыра фетта, маслины каламата, соус пряный</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-104-1.webp" alt="Романо с цыпленком" width="1280" height="952" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-104-1.webp" alt="Романо с цыпленком" width="1280" height="952" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-104-1-320.webp 320w, assets/images/kitchen/dish-104-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Романо с цыпленком</h4>
       <p class="bar-menu-meta">180 г · 860 ₽</p>
       <p>в сочетание с томатами, пармезаном и соусом из черного чеснока</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-108-1.webp" alt="Хрустящие баклажаны" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-108-1.webp" alt="Хрустящие баклажаны" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-108-1-320.webp 320w, assets/images/kitchen/dish-108-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Хрустящие баклажаны</h4>
       <p class="bar-menu-meta">300 г · 720 ₽</p>
       <p>баклажаны, розовые томаты, манго, имбирь, кинза, сыр страчателла, кунжут, соус сычуаньский</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-112-1.webp" alt="Салат с морепродуктами" width="1280" height="950" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-112-1.webp" alt="Салат с морепродуктами" width="1280" height="950" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-112-1-320.webp 320w, assets/images/kitchen/dish-112-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Салат с морепродуктами</h4>
       <p class="bar-menu-meta">310 г · 1 270 ₽</p>
       <p>мясо мидий, микс салата, помидоры черри, гребешки, кальмар, креветки тигровые, грейпфрут</p>
@@ -269,21 +273,21 @@
   <summary>Супы</summary>
 <div class="menu-items">
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/borscht.webp" alt="Борщ" width="1280" height="946" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/borscht.webp" alt="Борщ" width="1280" height="946" loading="lazy" decoding="async" srcset="assets/images/kitchen/borscht-320.webp 320w, assets/images/kitchen/borscht.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Борщ</h4>
       <p class="bar-menu-meta">440 г · 970 ₽</p>
       <p>Из говяжьих щёчек, с бородинскими гренками, муссом из сала и сметаной.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/tom-yum.webp" alt="Том ям" width="1280" height="956" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/tom-yum.webp" alt="Том ям" width="1280" height="956" loading="lazy" decoding="async" srcset="assets/images/kitchen/tom-yum-320.webp 320w, assets/images/kitchen/tom-yum.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Том ям</h4>
       <p class="bar-menu-meta">570 г · 1 180 ₽</p>
       <p>Морепродукты, вешенки, томаты черри и перец чили. Подаётся с рисом.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/chicken-soup.webp" alt="Куриный суп" width="1280" height="960" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/chicken-soup.webp" alt="Куриный суп" width="1280" height="960" loading="lazy" decoding="async" srcset="assets/images/kitchen/chicken-soup-320.webp 320w, assets/images/kitchen/chicken-soup.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Куриный суп</h4>
       <p class="bar-menu-meta">395 г · 680 ₽</p>
       <p>куриный суп с лапшой</p>
@@ -295,63 +299,63 @@
   <summary>Горячие блюда</summary>
 <div class="menu-items">
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-137-1.webp" alt="Куриная грудка SUV" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-137-1.webp" alt="Куриная грудка SUV" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-137-1-320.webp 320w, assets/images/kitchen/dish-137-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Куриная грудка SUV</h4>
       <p class="bar-menu-meta">420 г · 890 ₽</p>
       <p>киноа, соус сливочный карри</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-142-1.webp" alt="Куриный шницель" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-142-1.webp" alt="Куриный шницель" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-142-1-320.webp 320w, assets/images/kitchen/dish-142-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Куриный шницель</h4>
       <p class="bar-menu-meta">360 г · 880 ₽</p>
       <p>подается с картофельным пюре, коул слоу под лаймовым соусом айоли</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-148-1.webp" alt="Котлеты из индейки" width="1280" height="951" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-148-1.webp" alt="Котлеты из индейки" width="1280" height="951" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-148-1-320.webp 320w, assets/images/kitchen/dish-148-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Котлеты из индейки</h4>
       <p class="bar-menu-meta">270 г · 750 ₽</p>
       <p>на пару/гриле с картофельным пюре</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-154-1.webp" alt="Бургер классический" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-154-1.webp" alt="Бургер классический" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-154-1-320.webp 320w, assets/images/kitchen/dish-154-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Бургер классический</h4>
       <p class="bar-menu-meta">300 г · 850 ₽</p>
       <p>котлета из мраморной говядины, розовые томаты, лук, сыр чеддер, соус фирменный, подается с картофелем фри</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-158-1.webp" alt="Бефстроганов" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-158-1.webp" alt="Бефстроганов" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-158-1-320.webp 320w, assets/images/kitchen/dish-158-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Бефстроганов</h4>
       <p class="bar-menu-meta">350 г · 850 ₽</p>
       <p>драники из картофеля, говяжья вырезка, сливочный соус</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-164-1.webp" alt="Стейк стриплойн" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-164-1.webp" alt="Стейк стриплойн" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-164-1-320.webp 320w, assets/images/kitchen/dish-164-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Стейк стриплойн</h4>
       <p class="bar-menu-meta">700 ₽ / 100 г</p>
       <p>Подаётся с мини-картофелем. Вес порции уточняйте у официанта.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-167-1.webp" alt="Стейк рибай" width="1280" height="956" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-167-1.webp" alt="Стейк рибай" width="1280" height="956" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-167-1-320.webp 320w, assets/images/kitchen/dish-167-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Стейк рибай</h4>
       <p class="bar-menu-meta">1 150 ₽ / 100 г</p>
       <p>Подаётся с мини-картофелем. Вес порции уточняйте у официанта.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-172-1.webp" alt="Свиные ребра" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-172-1.webp" alt="Свиные ребра" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-172-1-320.webp 320w, assets/images/kitchen/dish-172-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Свиные рёбра</h4>
       <p class="bar-menu-meta">435 г · 890 ₽</p>
       <p>подается в соусе барбекю с картофелем фри, коул слоу в соусе лаймовый айоли и зеленым луком</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-178-1.webp" alt="Лосось в сливочном соусе" width="1280" height="954" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-178-1.webp" alt="Лосось в сливочном соусе" width="1280" height="954" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-178-1-320.webp 320w, assets/images/kitchen/dish-178-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Лосось в сливочном соусе</h4>
       <p class="bar-menu-meta">400 г · 1 650 ₽</p>
       <p>С брокколи, мидиями и зелёным маслом. Подаётся с рисом.</p>
@@ -363,28 +367,28 @@
   <summary>Паста</summary>
 <div class="menu-items">
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-187-1.webp" alt="Карбонара" width="1280" height="953" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-187-1.webp" alt="Карбонара" width="1280" height="953" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-187-1-320.webp 320w, assets/images/kitchen/dish-187-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Карбонара</h4>
       <p class="bar-menu-meta">280 г · 880 ₽</p>
       <p>подается с зажаристым беконом, луком, сливками и яйцом пашот</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-195-1.webp" alt="Лазанья с говядиной" width="1280" height="955" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-195-1.webp" alt="Лазанья с говядиной" width="1280" height="955" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-195-1-320.webp 320w, assets/images/kitchen/dish-195-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Лазанья с говядиной</h4>
       <p class="bar-menu-meta">260 г · 980 ₽</p>
       <p>подается с соусом Бешамель, пармезаном и моцареллой</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-202-1.webp" alt="Томаты страчателла" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-202-1.webp" alt="Томаты страчателла" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-202-1-320.webp 320w, assets/images/kitchen/dish-202-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Томаты страчателла</h4>
       <p class="bar-menu-meta">400 г · 670 ₽</p>
       <p>спагетти, соус томатный, страчателла, томаты, базилик</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-205-1.webp" alt="Орзо с креветками" width="1280" height="951" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-205-1.webp" alt="Орзо с креветками" width="1280" height="951" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-205-1-320.webp 320w, assets/images/kitchen/dish-205-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Орзо с креветками</h4>
       <p class="bar-menu-meta">290 г · 930 ₽</p>
       <p>Обжаренные креветки в пряно-сливочном соусе с авокадо.</p>
@@ -401,35 +405,35 @@
   <summary>Пицца</summary>
 <div class="menu-items">
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-212-1.webp" alt="Пепперони" width="1280" height="951" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-212-1.webp" alt="Пепперони" width="1280" height="951" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-212-1-320.webp 320w, assets/images/kitchen/dish-212-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Пепперони</h4>
       <p class="bar-menu-meta">310 г · 850 ₽</p>
       <p>с моцареллой, халапеньо и фирменным томатным соусом</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-217-1.webp" alt="Мясная" width="1280" height="958" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-217-1.webp" alt="Мясная" width="1280" height="958" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-217-1-320.webp 320w, assets/images/kitchen/dish-217-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Мясная</h4>
       <p class="bar-menu-meta">370 г · 1 050 ₽</p>
       <p>Бекон, тамбовский окорок, ростбиф, оливки каламата, моцарелла и фирменный томатный соус.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-222-1.webp" alt="Четыре сыра" width="1280" height="943" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-222-1.webp" alt="Четыре сыра" width="1280" height="943" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-222-1-320.webp 320w, assets/images/kitchen/dish-222-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Четыре сыра</h4>
       <p class="bar-menu-meta">300 г · 950 ₽</p>
       <p>Чеддер, моцарелла боккончини, пармезан, моцарелла и сливочный соус.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-227-1.webp" alt="Дорблю груша" width="1280" height="959" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-227-1.webp" alt="Дорблю груша" width="1280" height="959" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-227-1-320.webp 320w, assets/images/kitchen/dish-227-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Дорблю груша</h4>
       <p class="bar-menu-meta">415 г · 850 ₽</p>
       <p>с моцареллой, сыром дорблю, грушей кони и сливочным соусом</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-233-1.webp" alt="Томаты страчателла" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-233-1.webp" alt="Томаты страчателла" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-233-1-320.webp 320w, assets/images/kitchen/dish-233-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Томаты страчателла</h4>
       <p class="bar-menu-meta">400 г · 670 ₽</p>
       <p>сыр моцарелла и страчателла, фирменный томатный соус</p>
@@ -462,9 +466,9 @@
 </details>
 <details class="bar-menu-group">
   <summary>Классические роллы</summary>
-<div class="menu-items menu-items--masonry">
+<div class="menu-items menu-items--columns">
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-253-1.webp" alt="Филадельфия" width="1280" height="953" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-253-1.webp" alt="Филадельфия" width="1280" height="953" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-253-1-320.webp 320w, assets/images/kitchen/dish-253-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Филадельфия</h4>
       <p class="bar-menu-meta">230 г · 1 100 ₽</p>
       <p>лосось, сыр креметта, огурец</p>
@@ -477,7 +481,7 @@
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-260-1.webp" alt="Филадельфия с угрем" width="1280" height="958" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-260-1.webp" alt="Филадельфия с угрем" width="1280" height="958" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-260-1-320.webp 320w, assets/images/kitchen/dish-260-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Филадельфия с угрём</h4>
       <p class="bar-menu-meta">230 г · 1 200 ₽</p>
       <p>угорь, сыр креметта, огурец, кунжут, соус унаги</p>
@@ -489,27 +493,27 @@
       <p>На выбор: лосось, тунец или угорь.</p>
     </div>
     <div class="bar-menu-photos">
-      <figure><img src="assets/images/kitchen/dish-267-1.webp" alt="Гунканы" width="1280" height="941" loading="lazy" decoding="async"></figure>
-      <figure><img src="assets/images/kitchen/dish-267-2.webp" alt="Гунканы" width="1280" height="954" loading="lazy" decoding="async"></figure>
-      <figure><img src="assets/images/kitchen/dish-267-3.webp" alt="Гунканы" width="1280" height="949" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/images/kitchen/dish-267-1.webp" alt="Гунканы" width="1280" height="941" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-267-1-320.webp 320w, assets/images/kitchen/dish-267-1.webp 1280w" sizes="(max-width: 680px) 27vw, 15vw"></figure>
+      <figure><img src="assets/images/kitchen/dish-267-2.webp" alt="Гунканы" width="1280" height="954" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-267-2-320.webp 320w, assets/images/kitchen/dish-267-2.webp 1280w" sizes="(max-width: 680px) 27vw, 15vw"></figure>
+      <figure><img src="assets/images/kitchen/dish-267-3.webp" alt="Гунканы" width="1280" height="949" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-267-3-320.webp 320w, assets/images/kitchen/dish-267-3.webp 1280w" sizes="(max-width: 680px) 27vw, 15vw"></figure>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-273-1.webp" alt="Калифорния" width="1280" height="949" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-273-1.webp" alt="Калифорния" width="1280" height="949" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-273-1-320.webp 320w, assets/images/kitchen/dish-273-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Калифорния</h4>
       <p class="bar-menu-meta">260 г · 1 050 ₽</p>
       <p>Сыр креметта, камчатский краб, огурец и икра тобико.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-279-1.webp" alt="Филадельфия с креветкой" width="1280" height="956" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-279-1.webp" alt="Филадельфия с креветкой" width="1280" height="956" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-279-1-320.webp 320w, assets/images/kitchen/dish-279-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Филадельфия с креветкой</h4>
       <p class="bar-menu-meta">270 г · 1 100 ₽</p>
       <p>Сыр креметта, огурец, соус спайси и креветка.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-287-1.webp" alt="Филадельфия авокадо" width="1280" height="956" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-287-1.webp" alt="Филадельфия авокадо" width="1280" height="956" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-287-1-320.webp 320w, assets/images/kitchen/dish-287-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Филадельфия авокадо</h4>
       <p class="bar-menu-meta">250 г · 900 ₽</p>
       <p>Сыр креметта, авокадо, огурец, кунжут и соус унаги.</p>
@@ -521,21 +525,21 @@
   <summary>Темпура-роллы</summary>
 <div class="menu-items">
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-296-1.webp" alt="Темпура с креветкой" width="1280" height="955" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-296-1.webp" alt="Темпура с креветкой" width="1280" height="955" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-296-1-320.webp 320w, assets/images/kitchen/dish-296-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Темпура с креветкой</h4>
       <p class="bar-menu-meta">220 г · 880 ₽</p>
       <p>Сыр креметта, креветка и огурцы.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-299-1.webp" alt="Темпура с лососем" width="1280" height="950" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-299-1.webp" alt="Темпура с лососем" width="1280" height="950" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-299-1-320.webp 320w, assets/images/kitchen/dish-299-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Темпура с лососем</h4>
       <p class="bar-menu-meta">220 г · 980 ₽</p>
       <p>Сыр креметта, лосось и огурцы.</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-301-1.webp" alt="Темпура с угрем" width="1280" height="714" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-301-1.webp" alt="Темпура с угрем" width="1280" height="714" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-301-1-320.webp 320w, assets/images/kitchen/dish-301-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Темпура с угрём</h4>
       <p class="bar-menu-meta">220 г · 990 ₽</p>
       <p>Сыр креметта, угорь и огурцы.</p>
@@ -552,42 +556,42 @@
   <summary>Пирожные и ягоды</summary>
 <div class="menu-items">
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-002-1.webp" alt="Корпусный десерт “малина”" width="950" height="1022" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-002-1.webp" alt="Корпусный десерт “малина”" width="950" height="1022" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-002-1-320.webp 320w, assets/images/kitchen/dish-002-1.webp 950w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Корпусный десерт «Малина»</h4>
       <p class="bar-menu-meta">85 г · 750 ₽</p>
       <p>пирожное в форме ягоды малины, покрытое глазурью</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-007-1.webp" alt="Чизкейк" width="1280" height="950" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-007-1.webp" alt="Чизкейк" width="1280" height="950" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-007-1-320.webp 320w, assets/images/kitchen/dish-007-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Чизкейк</h4>
       <p class="bar-menu-meta">150 г · 650 ₽</p>
       <p>Нежнейший сливочный крем из сыра креметте, запеченный на основе из песочного теста</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-011-1.webp" alt="Медовик" width="1280" height="947" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-011-1.webp" alt="Медовик" width="1280" height="947" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-011-1-320.webp 320w, assets/images/kitchen/dish-011-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Медовик</h4>
       <p class="bar-menu-meta">85 г · 650 ₽</p>
       <p>Тонкие медовые коржи, прослоенные лёгким кремом из сливок, сметаны и мёда</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-015-1.webp" alt="Прага" width="972" height="1070" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-015-1.webp" alt="Прага" width="972" height="1070" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-015-1-320.webp 320w, assets/images/kitchen/dish-015-1.webp 972w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Прага</h4>
       <p class="bar-menu-meta">115 г · 650 ₽</p>
       <p>Классический советский рецепт из шоколадных коржей, с кремовой прослойкой с добавлением какао и коньяка</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-021-1.webp" alt="Эстерхази" width="964" height="1068" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-021-1.webp" alt="Эстерхази" width="964" height="1068" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-021-1-320.webp 320w, assets/images/kitchen/dish-021-1.webp 964w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Эстерхайзи</h4>
       <p class="bar-menu-meta">115 г · 650 ₽</p>
       <p>Тонкие миндальные коржи с прослойкой орехового крема, покрытый глазурью из карамельного шоколада</p>
     </div>
   </article>
   <article class="bar-menu-item menu-card">
-    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-025-1.webp" alt="Сникерс" width="1280" height="948" loading="lazy" decoding="async"></div>
+    <div class="menu-card-photos"><img src="assets/images/kitchen/dish-025-1.webp" alt="Сникерс" width="1280" height="948" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-025-1-320.webp 320w, assets/images/kitchen/dish-025-1.webp 1280w" sizes="(max-width: 360px) 64px, (max-width: 800px) 72px, (max-width: 1333px) 9vw, 120px"></div>
     <div class="menu-card-copy"><h4>Сникерс</h4>
       <p class="bar-menu-meta">105 г · 650 ₽</p>
       <p>Шоколадный бисквит, ганаш на основе молочного шоколада, соленая карамель, арахис, покрыт молочным шоколадом</p>
@@ -597,8 +601,8 @@
     <h4>Свежие ягоды</h4>
     <p class="bar-menu-meta">100 г · 450 ₽</p>
     <div class="bar-menu-photos">
-      <figure><img src="assets/images/kitchen/dish-030-1.webp" alt="Голубика" width="1280" height="955" loading="lazy" decoding="async"></figure>
-      <figure><img src="assets/images/kitchen/dish-030-2.webp" alt="Клубника" width="1280" height="953" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/images/kitchen/dish-030-1.webp" alt="Голубика" width="1280" height="955" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-030-1-480.webp 480w, assets/images/kitchen/dish-030-1.webp 1280w" sizes="(max-width: 680px) 41vw, 22vw"></figure>
+      <figure><img src="assets/images/kitchen/dish-030-2.webp" alt="Клубника" width="1280" height="953" loading="lazy" decoding="async" srcset="assets/images/kitchen/dish-030-2-480.webp 480w, assets/images/kitchen/dish-030-2.webp 1280w" sizes="(max-width: 680px) 41vw, 22vw"></figure>
     </div>
   </article>
 </div>
@@ -1011,31 +1015,31 @@
       <div class="menu-groups" id="bar-menu">
 <details class="bar-menu-group"><summary>Классические коктейли</summary>
 <div class="bar-menu-items">
-<article class="bar-menu-item"><h4>Лонг айленд / берри</h4><p class="bar-menu-meta">325 мл · от 19% · 900 ₽</p><p>Ром, джин, водка, трипл сек, текила, кока-кола или ягоды.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6705.webp" alt="Лонг айленд/берри — лонг  айленд" loading="lazy" decoding="async"></figure><figure><img src="assets/images/bar/img_6708.webp" alt="Лонг айленд/берри — лонг бери" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>Апероль классический / маракуйя / клубничный</h4><p class="bar-menu-meta">180 мл · от 9% · 900 ₽</p><p>Апероль, просекко, содовая.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6421.webp" alt="Апероль классический/маракуйя/ клубничный — классический" loading="lazy" decoding="async"></figure><figure><img src="assets/images/bar/img_6739.webp" alt="Апероль классический/маракуйя/ клубничный — клубничный" loading="lazy" decoding="async"></figure><figure><img src="assets/images/bar/img_6706.webp" alt="Апероль классический/маракуйя/ клубничный — маракуйя" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>Мохито королевский</h4><p class="bar-menu-meta">200 мл · 11,5% · 900 ₽</p><p>Спрайт, просекко, ром, абсент.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6563.webp" alt="Мохито королевский" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>Мартини тоник</h4><p class="bar-menu-meta">180 мл · 6,2% · 700 ₽</p><p>Мартини фиеро, бьянко или россо, тоник и апельсин.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6688.webp" alt="Мартини тоник — бьянко" loading="lazy" decoding="async"></figure><figure><img src="assets/images/bar/img_6565.webp" alt="Мартини тоник — фиеро" loading="lazy" decoding="async"></figure><figure><img src="assets/images/bar/img_6740.webp" alt="Мартини тоник — россо" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>Негрони</h4><p class="bar-menu-meta">120 мл · 20,8% · 700 ₽</p><p>джин, кампари, красный вермут, кумкват</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6420.webp" alt="Негрони" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>Пина колада</h4><p class="bar-menu-meta">250 мл · 7% · 900 ₽</p><p>Ром, кокосовый ликёр, ананасовый сок, сливки.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6696.webp" alt="Пина - колада" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>Сауэр</h4><p class="bar-menu-meta">110 мл · от 18,2% · 700 ₽</p><p>виски/текила/ром/джин</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6697.webp" alt="Сауэр — виски" loading="lazy" decoding="async"></figure><figure><img src="assets/images/bar/img_6698.webp" alt="Сауэр — джин" loading="lazy" decoding="async"></figure><figure><img src="assets/images/bar/img_6699.webp" alt="Сауэр — текила" loading="lazy" decoding="async"></figure><figure><img src="assets/images/bar/img_6700.webp" alt="Сауэр — ром" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>Кловер клаб</h4><p class="bar-menu-meta">160 мл · 16,1% · 700 ₽</p><p>Джин, малиновое пюре, малина.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6707.webp" alt="Кловер клаб" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>Космополитен</h4><p class="bar-menu-meta">250 мл · 10% · 700 ₽</p><p>Водка, трипл сек, клюквенный морс.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6701.webp" alt="Космополитен" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>Май Тай</h4><p class="bar-menu-meta">250 мл · 11,9% · 900 ₽</p><p>Ром, трипл сек, ананасовый сок, миндальный сироп.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6703.webp" alt="Май Тай" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>Джин тоник</h4><p class="bar-menu-meta">220 мл · 10,9% · 900 ₽</p><p>джин, тоник, ежевика</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6704.webp" alt="Джин тоник" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>Розмари Кулер</h4><p class="bar-menu-meta">250 мл · 8,5% · 900 ₽</p><p>Ром, пюре маракуйи, ананасовый сок, манго.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6702.webp" alt="Розмари Кулер" loading="lazy" decoding="async"></figure></div></article>
+<article class="bar-menu-item"><h4>Лонг айленд / берри</h4><p class="bar-menu-meta">325 мл · от 19% · 900 ₽</p><p>Ром, джин, водка, трипл сек, текила, кока-кола или ягоды.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6705.webp" alt="Лонг айленд/берри — лонг  айленд" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6705-480.webp 480w, assets/images/bar/img_6705.webp 768w" sizes="(max-width: 680px) 41vw, 22vw"></figure><figure><img src="assets/images/bar/img_6708.webp" alt="Лонг айленд/берри — лонг бери" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6708-480.webp 480w, assets/images/bar/img_6708.webp 768w" sizes="(max-width: 680px) 41vw, 22vw"></figure></div></article>
+<article class="bar-menu-item"><h4>Апероль классический / маракуйя / клубничный</h4><p class="bar-menu-meta">180 мл · от 9% · 900 ₽</p><p>Апероль, просекко, содовая.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6421.webp" alt="Апероль классический/маракуйя/ клубничный — классический" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6421-320.webp 320w, assets/images/bar/img_6421.webp 768w" sizes="(max-width: 680px) 27vw, 15vw"></figure><figure><img src="assets/images/bar/img_6739.webp" alt="Апероль классический/маракуйя/ клубничный — клубничный" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6739-320.webp 320w, assets/images/bar/img_6739.webp 768w" sizes="(max-width: 680px) 27vw, 15vw"></figure><figure><img src="assets/images/bar/img_6706.webp" alt="Апероль классический/маракуйя/ клубничный — маракуйя" loading="lazy" decoding="async" width="713" height="934" srcset="assets/images/bar/img_6706-320.webp 320w, assets/images/bar/img_6706.webp 713w" sizes="(max-width: 680px) 27vw, 15vw"></figure></div></article>
+<article class="bar-menu-item"><h4>Мохито королевский</h4><p class="bar-menu-meta">200 мл · 11,5% · 900 ₽</p><p>Спрайт, просекко, ром, абсент.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6563.webp" alt="Мохито королевский" loading="lazy" decoding="async" width="832" height="1100" srcset="assets/images/bar/img_6563-640.webp 640w, assets/images/bar/img_6563.webp 832w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>Мартини тоник</h4><p class="bar-menu-meta">180 мл · 6,2% · 700 ₽</p><p>Мартини фиеро, бьянко или россо, тоник и апельсин.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6688.webp" alt="Мартини тоник — бьянко" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6688-320.webp 320w, assets/images/bar/img_6688.webp 768w" sizes="(max-width: 680px) 27vw, 15vw"></figure><figure><img src="assets/images/bar/img_6565.webp" alt="Мартини тоник — фиеро" loading="lazy" decoding="async" width="832" height="1100" srcset="assets/images/bar/img_6565-320.webp 320w, assets/images/bar/img_6565.webp 832w" sizes="(max-width: 680px) 27vw, 15vw"></figure><figure><img src="assets/images/bar/img_6740.webp" alt="Мартини тоник — россо" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6740-320.webp 320w, assets/images/bar/img_6740.webp 768w" sizes="(max-width: 680px) 27vw, 15vw"></figure></div></article>
+<article class="bar-menu-item"><h4>Негрони</h4><p class="bar-menu-meta">120 мл · 20,8% · 700 ₽</p><p>джин, кампари, красный вермут, кумкват</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6420.webp" alt="Негрони" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6420-640.webp 640w, assets/images/bar/img_6420.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>Пина колада</h4><p class="bar-menu-meta">250 мл · 7% · 900 ₽</p><p>Ром, кокосовый ликёр, ананасовый сок, сливки.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6696.webp" alt="Пина - колада" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6696-640.webp 640w, assets/images/bar/img_6696.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>Сауэр</h4><p class="bar-menu-meta">110 мл · от 18,2% · 700 ₽</p><p>виски/текила/ром/джин</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6697.webp" alt="Сауэр — виски" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6697-480.webp 480w, assets/images/bar/img_6697.webp 768w" sizes="(max-width: 680px) 41vw, 22vw"></figure><figure><img src="assets/images/bar/img_6698.webp" alt="Сауэр — джин" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6698-480.webp 480w, assets/images/bar/img_6698.webp 768w" sizes="(max-width: 680px) 41vw, 22vw"></figure><figure><img src="assets/images/bar/img_6699.webp" alt="Сауэр — текила" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6699-480.webp 480w, assets/images/bar/img_6699.webp 768w" sizes="(max-width: 680px) 41vw, 22vw"></figure><figure><img src="assets/images/bar/img_6700.webp" alt="Сауэр — ром" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6700-480.webp 480w, assets/images/bar/img_6700.webp 768w" sizes="(max-width: 680px) 41vw, 22vw"></figure></div></article>
+<article class="bar-menu-item"><h4>Кловер клаб</h4><p class="bar-menu-meta">160 мл · 16,1% · 700 ₽</p><p>Джин, малиновое пюре, малина.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6707.webp" alt="Кловер клаб" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6707-640.webp 640w, assets/images/bar/img_6707.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>Космополитен</h4><p class="bar-menu-meta">250 мл · 10% · 700 ₽</p><p>Водка, трипл сек, клюквенный морс.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6701.webp" alt="Космополитен" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6701-640.webp 640w, assets/images/bar/img_6701.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>Май Тай</h4><p class="bar-menu-meta">250 мл · 11,9% · 900 ₽</p><p>Ром, трипл сек, ананасовый сок, миндальный сироп.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6703.webp" alt="Май Тай" loading="lazy" decoding="async" width="678" height="947" srcset="assets/images/bar/img_6703-640.webp 640w, assets/images/bar/img_6703.webp 678w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>Джин тоник</h4><p class="bar-menu-meta">220 мл · 10,9% · 900 ₽</p><p>джин, тоник, ежевика</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6704.webp" alt="Джин тоник" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6704-640.webp 640w, assets/images/bar/img_6704.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>Розмари Кулер</h4><p class="bar-menu-meta">250 мл · 8,5% · 900 ₽</p><p>Ром, пюре маракуйи, ананасовый сок, манго.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6702.webp" alt="Розмари Кулер" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6702-640.webp 640w, assets/images/bar/img_6702.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
 </div></details>
 <details class="bar-menu-group"><summary>Фирменные коктейли</summary>
 <div class="bar-menu-items">
-<article class="bar-menu-item"><h4>№1</h4><p class="bar-menu-meta">220 мл · 10% · 900 ₽</p><p>Водка «Ники», кордиал саган-дайля.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6720.webp" alt="№1" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>№2</h4><p class="bar-menu-meta">120 мл · 14,3% · 900 ₽</p><p>Джин «Року», кордиал из чёрной смородины, голубика.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6721.webp" alt="№2" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>№3</h4><p class="bar-menu-meta">240 мл · 9,4% · 900 ₽</p><p>Бурбон, ликёр из чёрной смородины, гранатовый сок.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6723.webp" alt="№3" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>№4</h4><p class="bar-menu-meta">200 мл · 12,1% · 700 ₽</p><p>джин, пюре личи, сироп розы и малины</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6731.webp" alt="№4" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>№5</h4><p class="bar-menu-meta">240 мл · 7,5% · 900 ₽</p><p>Бейлис, ром, сливки.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6737.webp" alt="№5" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>№6</h4><p class="bar-menu-meta">220 мл · 11,1% · 900 ₽</p><p>джин, чери бренди, вишневый сок, сироп вишни и лесных ягод, ягоды голубики</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6735.webp" alt="№6" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>№7</h4><p class="bar-menu-meta">250 мл · 11,1% · 900 ₽</p><p>водка, просекко, маракуйя, сироп маракуйи и ванили</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6736.webp" alt="№7" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>№8</h4><p class="bar-menu-meta">150 мл · 13,1% · 900 ₽</p><p>Бейлис, виски, кофейный ликёр, сироп ванили и шоколада, эспрессо.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6727.webp" alt="№8" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>№9</h4><p class="bar-menu-meta">120 мл · 13,3% · 900 ₽</p><p>белый вермут, джин, клубничный ликер, сироп клубники</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6729.webp" alt="№9" loading="lazy" decoding="async"></figure></div></article>
-<article class="bar-menu-item"><h4>№10</h4><p class="bar-menu-meta">210 мл · 9,2% · 900 ₽</p><p>Апероль, водка, персиковый ликёр, сироп грейпфрута и персика, персиковый и гранатовый сок.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6730.webp" alt="№10" loading="lazy" decoding="async"></figure></div></article>
+<article class="bar-menu-item"><h4>№1</h4><p class="bar-menu-meta">220 мл · 10% · 900 ₽</p><p>Водка «Ники», кордиал саган-дайля.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6720.webp" alt="№1" loading="lazy" decoding="async" width="614" height="851"></figure></div></article>
+<article class="bar-menu-item"><h4>№2</h4><p class="bar-menu-meta">120 мл · 14,3% · 900 ₽</p><p>Джин «Року», кордиал из чёрной смородины, голубика.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6721.webp" alt="№2" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6721-640.webp 640w, assets/images/bar/img_6721.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>№3</h4><p class="bar-menu-meta">240 мл · 9,4% · 900 ₽</p><p>Бурбон, ликёр из чёрной смородины, гранатовый сок.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6723.webp" alt="№3" loading="lazy" decoding="async" width="1024" height="768" srcset="assets/images/bar/img_6723-640.webp 640w, assets/images/bar/img_6723.webp 1024w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>№4</h4><p class="bar-menu-meta">200 мл · 12,1% · 700 ₽</p><p>джин, пюре личи, сироп розы и малины</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6731.webp" alt="№4" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6731-640.webp 640w, assets/images/bar/img_6731.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>№5</h4><p class="bar-menu-meta">240 мл · 7,5% · 900 ₽</p><p>Бейлис, ром, сливки.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6737.webp" alt="№5" loading="lazy" decoding="async" width="885" height="1086" srcset="assets/images/bar/img_6737-640.webp 640w, assets/images/bar/img_6737.webp 885w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>№6</h4><p class="bar-menu-meta">220 мл · 11,1% · 900 ₽</p><p>джин, чери бренди, вишневый сок, сироп вишни и лесных ягод, ягоды голубики</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6735.webp" alt="№6" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6735-640.webp 640w, assets/images/bar/img_6735.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>№7</h4><p class="bar-menu-meta">250 мл · 11,1% · 900 ₽</p><p>водка, просекко, маракуйя, сироп маракуйи и ванили</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6736.webp" alt="№7" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6736-640.webp 640w, assets/images/bar/img_6736.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>№8</h4><p class="bar-menu-meta">150 мл · 13,1% · 900 ₽</p><p>Бейлис, виски, кофейный ликёр, сироп ванили и шоколада, эспрессо.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6727.webp" alt="№8" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6727-640.webp 640w, assets/images/bar/img_6727.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>№9</h4><p class="bar-menu-meta">120 мл · 13,3% · 900 ₽</p><p>белый вермут, джин, клубничный ликер, сироп клубники</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6729.webp" alt="№9" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6729-640.webp 640w, assets/images/bar/img_6729.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
+<article class="bar-menu-item"><h4>№10</h4><p class="bar-menu-meta">210 мл · 9,2% · 900 ₽</p><p>Апероль, водка, персиковый ликёр, сироп грейпфрута и персика, персиковый и гранатовый сок.</p><div class="bar-menu-photos"><figure><img src="assets/images/bar/img_6730.webp" alt="№10" loading="lazy" decoding="async" width="768" height="1024" srcset="assets/images/bar/img_6730-640.webp 640w, assets/images/bar/img_6730.webp 768w" sizes="(max-width: 680px) 84vw, 43vw"></figure></div></article>
 </div></details>
 <details class="bar-menu-group">
   <summary>Остальная барная карта</summary>
@@ -1215,7 +1219,7 @@
     <p class="bar-menu-meta">15 000 ₽</p>
     <p>Богемная буржуазия 20 века воплощена в виде фирменного Скруджи, олицетворяющего богатство, стабильность и безупречный стиль, но в современной манере 21 века с элементами стрит-арт как отсылка к Бэнкси.</p>
     <div class="bar-menu-photos">
-      <figure><img src="assets/images/hookah/smoke-scrooge-1.webp" alt="SMOKE SCROOGE" width="746" height="1120" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/images/hookah/smoke-scrooge-1.webp" alt="SMOKE SCROOGE" width="746" height="1120" loading="lazy" decoding="async" srcset="assets/images/hookah/smoke-scrooge-1-640.webp 640w, assets/images/hookah/smoke-scrooge-1.webp 746w" sizes="(max-width: 680px) 84vw, 43vw"></figure>
     </div>
   </article>
   <article class="bar-menu-item">
@@ -1223,7 +1227,7 @@
     <p class="bar-menu-meta">5 000 ₽</p>
     <p>Сочетание текстуры мрамора и камня с необычной чашей в виде кактуса дарят ощущения силы и спокойствия. Создавая это произведение, мы вдохновлялись силой горной природы, жаркими пустынями и урбанизацией городов.</p>
     <div class="bar-menu-photos">
-      <figure><img src="assets/images/hookah/desert-eagle-1.webp" alt="DESERT EAGLE" width="746" height="1120" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/images/hookah/desert-eagle-1.webp" alt="DESERT EAGLE" width="746" height="1120" loading="lazy" decoding="async" srcset="assets/images/hookah/desert-eagle-1-640.webp 640w, assets/images/hookah/desert-eagle-1.webp 746w" sizes="(max-width: 680px) 84vw, 43vw"></figure>
     </div>
   </article>
   <article class="bar-menu-item">
@@ -1231,7 +1235,7 @@
     <p class="bar-menu-meta">6 000 ₽</p>
     <p>Что вы представляете при слове попкорн? Ассоциации с кинофильмами, атмосферой сладкого карамельного аромата поджаренных кукурузных зерен? Можете не представлять. Ведь попкорн буквально будет стоять перед Вами.</p>
     <div class="bar-menu-photos">
-      <figure><img src="assets/images/hookah/popcorn-time-2.webp" alt="POPCORN TIME" width="1280" height="1103" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/images/hookah/popcorn-time-2.webp" alt="POPCORN TIME" width="1280" height="1103" loading="lazy" decoding="async" srcset="assets/images/hookah/popcorn-time-2-640.webp 640w, assets/images/hookah/popcorn-time-2.webp 1280w" sizes="(max-width: 680px) 84vw, 43vw"></figure>
     </div>
   </article>
   <article class="bar-menu-item">
@@ -1239,7 +1243,7 @@
     <p class="bar-menu-meta">5 000 ₽ — для одного игрока · 7 500 ₽ — для двух игроков</p>
     <p>Уникальное сочетание ностальгии по золотой эпохи видеоигр и современного искусства кальянного дизайна</p>
     <div class="bar-menu-photos">
-      <figure><img src="assets/images/hookah/retro-hookah-1.webp" alt="RETRO HOOKAH" width="839" height="1120" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/images/hookah/retro-hookah-1.webp" alt="RETRO HOOKAH" width="839" height="1120" loading="lazy" decoding="async" srcset="assets/images/hookah/retro-hookah-1-640.webp 640w, assets/images/hookah/retro-hookah-1.webp 839w" sizes="(max-width: 680px) 84vw, 43vw"></figure>
     </div>
   </article>
   <article class="bar-menu-item">
@@ -1247,7 +1251,7 @@
     <p class="bar-menu-meta">5 500 ₽</p>
     <p>Король среди фигурок и центр внимания за любым столом</p>
     <div class="bar-menu-photos">
-      <figure><img src="assets/images/hookah/lego-brick-gentlemen-1.webp" alt="LEGO BRICK GENTLEMEN" width="839" height="1120" loading="lazy" decoding="async"></figure>
+      <figure><img src="assets/images/hookah/lego-brick-gentlemen-1.webp" alt="LEGO BRICK GENTLEMEN" width="839" height="1120" loading="lazy" decoding="async" srcset="assets/images/hookah/lego-brick-gentlemen-1-640.webp 640w, assets/images/hookah/lego-brick-gentlemen-1.webp 839w" sizes="(max-width: 680px) 84vw, 43vw"></figure>
     </div>
   </article>
 </div>
@@ -1259,10 +1263,10 @@
     <section class="section booking" id="booking" aria-labelledby="booking-title">
       <div class="booking-panel">
         <h2 class="section-title reveal" id="booking-title">Забронировать столик</h2>
-        <p class="booking-note" id="booking-note">Тестовая форма. Указывайте только вымышленные данные.</p>
+        <p class="booking-note" id="booking-note" hidden>Тестовая форма. Указывайте только вымышленные данные.</p>
 
         <form id="booking-form" action="/api/bookings" method="post" aria-describedby="booking-note">
-          <fieldset class="booking-fields" disabled>
+          <fieldset class="booking-fields" disabled hidden>
             <div class="booking-grid">
               <label>Дата
                 <input type="date" name="date" required>
@@ -1271,7 +1275,7 @@
                 <input type="time" name="time" required>
               </label>
               <label>Количество гостей
-                <input type="number" name="guests" min="1" step="1" required>
+                <input type="number" name="guests" min="1" step="1" inputmode="numeric" required>
               </label>
               <label>Телефон
                 <input type="tel" name="phone" inputmode="tel" autocomplete="off"
@@ -1282,6 +1286,7 @@
           </fieldset>
           <p class="booking-status" role="status"></p>
         </form>
+        <a class="main-button booking-call" href="tel:+79647650044">Позвонить для бронирования</a>
         <noscript>Для отправки тестовой заявки включите JavaScript.</noscript>
       </div>
     </section>
@@ -1325,7 +1330,7 @@
 
   <footer>
     <a class="logo reveal reveal-delay-1" href="#" aria-label="bo-bo — на главную">
-      <img src="assets/images/bobo-logo.png" alt="">
+      <img src="assets/images/bobo-logo.png" alt="" width="131" height="62">
     </a>
     <div class="reveal reveal-delay-2">© bo-bo · PODOLSK</div>
     <a class="footer-contact reveal reveal-delay-3" href="#top" aria-label="Вернуться к началу страницы">Наверх ↑</a>
