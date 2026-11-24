@@ -90,9 +90,9 @@
     <section class="section booking" id="booking" aria-labelledby="booking-title">
       <div class="booking-panel">
         <h2 class="section-title" id="booking-title">Забронировать столик</h2>
-        <p class="booking-note" id="booking-note">Тестовая форма. Используй вымышленные данные.</p>
+        <p class="booking-note" id="booking-note">Тестовая форма. Указывайте только вымышленные данные.</p>
 
-        <form id="booking-form" method="post" aria-describedby="booking-note">
+        <form id="booking-form" action="/api/bookings" method="post" aria-describedby="booking-note">
           <fieldset class="booking-fields" disabled>
             <div class="booking-grid">
               <label>Дата
@@ -109,11 +109,11 @@
                   placeholder="+7 (___) ___-__-__" maxlength="26" required>
               </label>
             </div>
-            <button class="main-button" type="submit">Проверить форму</button>
+            <button class="main-button" type="submit">Отправить тестовую заявку</button>
           </fieldset>
           <p class="booking-status" role="status"></p>
         </form>
-        <noscript>Для проверки формы включите JavaScript.</noscript>
+        <noscript>Для отправки тестовой заявки включите JavaScript.</noscript>
       </div>
     </section>
 

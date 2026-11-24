@@ -139,7 +139,6 @@
 
     .eyebrow {
       color: var(--gold);
-      text-transform: uppercase;
       letter-spacing: 5px;
       font-size: 11px;
       margin-bottom: 25px;
