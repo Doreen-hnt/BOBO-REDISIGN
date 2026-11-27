@@ -270,55 +270,101 @@
       filter: brightness(1.06);
     }
 
-    .offerings-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: clamp(14px, 2vw, 24px);
+    .section.offerings {
+      padding-top: clamp(24px, 4vw, 52px);
     }
 
-    .offering-card {
+    .photo-reel + .photo-reel {
+      margin-top: clamp(30px, 5vw, 58px);
+    }
+
+    .photo-reel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .photo-reel-header h3 {
+      font: 500 clamp(24px, 3.5vw, 38px) 'Playfair Display', serif;
+    }
+
+    .photo-reel-controls {
+      display: flex;
+      gap: 8px;
+    }
+
+    .photo-reel-controls[hidden] {
+      display: none;
+    }
+
+    .photo-reel-controls button {
+      width: 44px;
+      height: 44px;
+      border: 1px solid #c69a5680;
       background: var(--surface);
-      border: 1px solid #ffffff18;
-      transition: border-color .25s ease, box-shadow .3s ease;
+      color: var(--gold);
+      font-size: 22px;
+      cursor: pointer;
     }
 
-    .offering-image {
+    .photo-reel-controls button[aria-disabled="true"] {
+      opacity: .45;
+      cursor: default;
+    }
+
+    .photo-reel-controls button:focus-visible,
+    .photo-reel-track:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 4px;
+    }
+
+    .photo-reel-track {
+      --tile-width: calc((100% - 48px) / 5);
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: var(--tile-width);
+      gap: 12px;
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+      scrollbar-color: #c69a5680 var(--surface);
+      padding-bottom: 10px;
+      list-style: none;
+    }
+
+    .photo-reel-track li {
+      min-width: 0;
+      scroll-snap-align: start;
       overflow: hidden;
+      background: var(--surface);
     }
 
-    .offering-photo {
+    .photo-reel-track img {
       display: block;
       width: 100%;
       height: auto;
-      aspect-ratio: 4 / 3;
+      aspect-ratio: 4 / 5;
       object-fit: cover;
-      background: linear-gradient(145deg, #382e25, #26211d);
+      object-position: var(--focus, center);
     }
 
-    .offering-content {
-      padding: clamp(18px, 3vw, 28px);
+    .photo-reel-menu {
+      margin-top: 14px;
     }
 
-    .offering-content h3 {
-      margin-bottom: 8px;
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(24px, 3vw, 32px);
-      font-weight: 500;
+    @media (max-width: 1199px) {
+      .photo-reel-track { --tile-width: calc((100% - 36px) / 4); }
     }
 
-    @media (hover: hover) and (pointer: fine) {
-      .offering-card:hover {
-        border-color: #c69a5680;
-        box-shadow: 0 12px 28px #00000038;
-      }
+    @media (max-width: 850px) {
+      .photo-reel-track { --tile-width: calc((100% - 24px) / 3); }
+    }
 
-      .offering-photo {
-        transition: transform .55s var(--ease-out);
-      }
-
-      .offering-link:hover .offering-photo {
-        transform: scale(1.035);
-      }
+    @media (max-width: 600px) {
+      .photo-reel-track { --tile-width: 76%; }
     }
 
     .gallery {
@@ -489,10 +535,6 @@
       transition-delay: 210ms;
     }
 
-    .motion-ready .offering-card.reveal {
-      transition-property: opacity, translate, border-color, box-shadow;
-    }
-
     .motion-ready .gallery-grid img.reveal,
     .motion-ready .about-image.reveal {
       transition-property: opacity, translate, filter, transform;
@@ -580,10 +622,6 @@
         height: clamp(210px, 60vw, 390px);
       }
 
-      .offerings-grid {
-        gap: 12px;
-      }
-
       .contact-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -603,32 +641,6 @@
     }
 
     @media (max-width: 450px) {
-      .offerings-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .offerings .offering-link {
-        display: grid;
-        grid-template-columns: 41% minmax(0, 1fr);
-        align-items: center;
-      }
-
-      .offering-image {
-        height: 100%;
-      }
-
-      .offering-photo {
-        height: 100%;
-      }
-
-      .offering-content {
-        padding: 12px 14px;
-      }
-
-      .offering-content h3 {
-        margin-bottom: 4px;
-      }
-
       .gallery-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 8px;
@@ -768,28 +780,13 @@
   }
 }
 
-.offering-link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.offering-link-label,
 .offering-gallery-back {
   color: var(--gold);
   text-decoration: underline;
   text-underline-offset: 4px;
-}
-
-.offering-gallery-back {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-}
-
-.offering-link-label {
-  display: block;
-  margin-top: 4px;
 }
 
 .offering-gallery {

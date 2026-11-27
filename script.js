@@ -1,3 +1,34 @@
+document.querySelectorAll('.photo-reel').forEach(reel => {
+    const track = reel.querySelector('.photo-reel-track');
+    const controls = reel.querySelector('.photo-reel-controls');
+    const [previous, next] = controls.querySelectorAll('button');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    function updateControls() {
+        const end = track.scrollWidth - track.clientWidth;
+        controls.hidden = end <= 2;
+        previous.setAttribute('aria-disabled', String(track.scrollLeft <= 2));
+        next.setAttribute('aria-disabled', String(track.scrollLeft >= end - 2));
+    }
+
+    [previous, next].forEach((button, index) => {
+        button.addEventListener('click', () => {
+            if (button.getAttribute('aria-disabled') === 'true') return;
+            const [first, second] = track.children;
+            const step = second.getBoundingClientRect().left - first.getBoundingClientRect().left;
+            const count = Math.max(1, Math.floor(track.clientWidth / step));
+            track.scrollBy({
+                left: step * count * (index ? 1 : -1),
+                behavior: reduceMotion.matches ? 'instant' : 'smooth',
+            });
+        });
+    });
+
+    track.addEventListener('scroll', updateControls, { passive: true });
+    window.addEventListener('resize', updateControls);
+    updateControls();
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const revealElements = document.querySelectorAll('.reveal');
     const prefersReducedMotion = window.matchMedia &&
